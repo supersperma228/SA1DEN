@@ -12,165 +12,177 @@
         }
 
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%);
-            color: #e0e0e0;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #2a1a3a 0%, #3f2a5a 100%);
+            color: #d8cfff;
             min-height: 100vh;
             overflow-x: hidden;
+            line-height: 1.6;
         }
 
         .container {
-            width: 85%;
-            max-width: 1200px;
+            width: 90%;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 50px 20px;
             animation: fadeIn 1s ease-in-out;
         }
 
         h1 {
             text-align: center;
-            font-size: 2.5em;
-            background: linear-gradient(90deg, #ff6f61, #ffb88c);
+            font-size: 2.8em;
+            font-weight: 700;
+            background: linear-gradient(90deg, #a855f7, #d8b4fe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             animation: slideIn 0.8s ease-out;
         }
 
         h2 {
-            font-size: 1.8em;
-            margin: 20px 0;
-            color: #ffb88c;
+            font-size: 1.9em;
+            font-weight: 600;
+            margin: 30px 0 20px;
+            color: #d8b4fe;
         }
 
         .file-list {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .file-item {
-            background: linear-gradient(145deg, #2a2a4a, #3a3a6a);
+            background: linear-gradient(145deg, #3f2a5a, #5a3f7a);
             margin: 15px 0;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(168, 85, 247, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: slideUp 0.5s ease-out forwards;
+            animation: slideUp 0.6s ease-out forwards;
         }
 
         .file-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
 
         .file-item .file-name {
-            font-weight: 600;
-            font-size: 1.2em;
-            color: #e0e0e0;
+            font-weight: 500;
+            font-size: 1.3em;
+            color: #e8e0ff;
         }
 
         .file-item .size {
-            font-size: 0.9em;
-            color: #aaa;
-            margin-left: 10px;
+            font-size: 0.95em;
+            color: #b0a8d0;
+            margin-left: 12px;
         }
 
         .file-item a {
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
-            margin-left: 10px;
-            border-radius: 25px;
-            font-size: 0.9em;
+            margin-left: 12px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 500;
             transition: all 0.3s ease;
         }
 
         .file-item a.preview {
-            background: linear-gradient(90deg, #ff6f61, #ffb88c);
+            background: linear-gradient(90deg, #a855f7, #d8b4fe);
         }
 
         .file-item a.download {
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            background: linear-gradient(90deg, #7c3aed, #c084fc);
         }
 
         .file-item a.delete {
-            background: linear-gradient(90deg, #ff4757, #ff6b81);
+            background: linear-gradient(90deg, #ec4899, #f9a8d4);
         }
 
         .file-item a:hover {
-            transform: scale(1.05);
-            filter: brightness(1.2);
+            transform: scale(1.1);
+            filter: brightness(1.15);
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
         }
 
         hr {
             border: none;
             height: 1px;
-            background: linear-gradient(90deg, transparent, #ffb88c, transparent);
-            margin: 30px 0;
+            background: linear-gradient(90deg, transparent, #d8b4fe, transparent);
+            margin: 40px 0;
         }
 
         h3 {
-            font-size: 1.5em;
-            color: #ffb88c;
-            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #d8b4fe;
+            margin-bottom: 25px;
         }
 
         form {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 20px;
         }
 
         input[type="file"] {
-            padding: 10px;
-            background-color: #3a3a6a;
-            border: 1px solid #ffb88c;
-            border-radius: 5px;
-            color: #e0e0e0;
-            transition: border-color 0.3s ease;
+            padding: 12px;
+            background-color: #5a3f7a;
+            border: 1px solid #a855f7;
+            border-radius: 8px;
+            color: #d8cfff;
+            font-size: 1em;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
         }
 
         input[type="file"]:hover {
-            border-color: #ff6f61;
+            border-color: #d8b4fe;
+            background-color: #6b4e8a;
         }
 
         button {
-            padding: 12px 25px;
-            background: linear-gradient(90deg, #ff6f61, #ffb88c);
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #a855f7, #d8b4fe);
             border: none;
-            border-radius: 25px;
+            border-radius: 20px;
             color: #fff;
             font-size: 1em;
+            font-weight: 500;
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
         button:hover {
-            transform: scale(1.05);
-            filter: brightness(1.2);
+            transform: scale(1.1);
+            filter: brightness(1.15);
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
         }
 
         .flash-messages {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .flash-messages li {
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
             list-style: none;
             font-size: 1em;
             text-align: center;
+            font-weight: 500;
         }
 
         .flash-messages li.error {
-            background: linear-gradient(90deg, #ff4757, #ff6b81);
+            background: linear-gradient(90deg, #ec4899, #f9a8d4);
         }
 
         .flash-messages li.success {
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            background: linear-gradient(90deg, #7c3aed, #c084fc);
         }
 
         @keyframes fadeIn {
@@ -179,13 +191,31 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateY(-20px); opacity: 0; }
+            from { transform: translateY(-30px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
 
         @keyframes slideUp {
-            from { transform: translateY(20px); opacity: 0; }
+            from { transform: translateY(30px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .file-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .file-item a {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            form {
+                flex-direction: column;
+                align-items: stretch;
+            }
         }
     </style>
 </head>
