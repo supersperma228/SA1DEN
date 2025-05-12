@@ -12,49 +12,54 @@
         }
 
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%);
-            color: #e0e0e0;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #2a1a3a 0%, #3f2a5a 100%);
+            color: #d8cfff;
             min-height: 100vh;
+            line-height: 1.6;
         }
 
         .container {
-            width: 85%;
-            max-width: 1200px;
+            width: 90%;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 50px 20px;
             animation: fadeIn 1s ease-in-out;
         }
 
         h1 {
             text-align: center;
-            font-size: 2.5em;
-            background: linear-gradient(90deg, #ff6f61, #ffb88c);
+            font-size: 2.8em;
+            font-weight: 700;
+            background: linear-gradient(90deg, #a855f7, #d8b4fe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             animation: slideIn 0.8s ease-out;
         }
 
         .file-preview {
-            background: linear-gradient(145deg, #2a2a4a, #3a3a6a);
+            background: linear-gradient(145deg, #3f2a5a, #5a3f7a);
             margin: 20px 0;
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 12px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(168, 85, 247, 0.2);
             transition: transform 0.3s ease;
-            animation: slideUp 0.5s ease-out;
+            animation: slideUp 0.6s ease-out;
         }
 
         .file-preview:hover {
             transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
 
         .file-preview img {
             max-width: 100%;
             max-height: 500px;
             border-radius: 10px;
+            border: 1px solid rgba(168, 85, 247, 0.3);
             transition: transform 0.3s ease;
         }
 
@@ -66,11 +71,12 @@
             max-width: 100%;
             max-height: 500px;
             border-radius: 10px;
+            border: 1px solid rgba(168, 85, 247, 0.3);
         }
 
         .file-preview pre {
-            background: #222;
-            color: #e0e0e0;
+            background: #2f1b47;
+            color: #e8e0ff;
             padding: 20px;
             border-radius: 10px;
             white-space: pre-wrap;
@@ -79,46 +85,51 @@
             max-height: 500px;
             overflow-y: auto;
             text-align: left;
+            border: 1px solid rgba(168, 85, 247, 0.3);
         }
 
         .copy-button {
-            padding: 12px 25px;
-            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #7c3aed, #c084fc);
             border: none;
-            border-radius: 25px;
+            border-radius: 20px;
             color: #fff;
             font-size: 1em;
+            font-weight: 500;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 20px;
             transition: all 0.3s ease;
         }
 
         .copy-button:hover {
-            transform: scale(1.05);
-            filter: brightness(1.2);
+            transform: scale(1.1);
+            filter: brightness(1.15);
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
         }
 
         hr {
             border: none;
             height: 1px;
-            background: linear-gradient(90deg, transparent, #ffb88c, transparent);
-            margin: 30px 0;
+            background: linear-gradient(90deg, transparent, #d8b4fe, transparent);
+            margin: 40px 0;
         }
 
         a {
             display: inline-block;
-            padding: 12px 25px;
-            background: linear-gradient(90deg, #ff6f61, #ffb88c);
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #a855f7, #d8b4fe);
             color: #fff;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 20px;
             font-size: 1em;
+            font-weight: 500;
             transition: all 0.3s ease;
         }
 
         a:hover {
-            transform: scale(1.05);
-            filter: brightness(1.2);
+            transform: scale(1.1);
+            filter: brightness(1.15);
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
         }
 
         @keyframes fadeIn {
@@ -127,13 +138,23 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateY(-20px); opacity: 0; }
+            from { transform: translateY(-30px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
 
         @keyframes slideUp {
-            from { transform: translateY(20px); opacity: 0; }
+            from { transform: translateY(30px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .file-preview {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
         }
     </style>
 </head>
